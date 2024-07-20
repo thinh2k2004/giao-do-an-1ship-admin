@@ -1,0 +1,18 @@
+{
+  "name_app": "DEMO",
+  "hello": "Hello World",
+  "development_alert": "Function is in development!",
+  "token_expired": "Login session has expired",
+  "notification": "Notification",
+  "cancel": "Cancel",
+  "ok": "Agree",
+  "authentication_required": "Authentication required",
+  "please_verify_your_biometrics": "Please verify your biometrics",
+  "device_does_not_have_biometrics_installed": "This device does not use fingerprint/face login. Please make settings on your device before trying again.",
+  "device_does_not_support_biometric": "The device does not support biometric login.",
+  "biometric_login": "Biometric login",
+  "option": "Options",
+  "camera": "Camera",
+  "gallery": "Collection",
+  "logged_in": "Logged in as @name with email @email"
+}
