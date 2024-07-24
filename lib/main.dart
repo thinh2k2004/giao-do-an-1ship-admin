@@ -1,21 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:test_web/presentation/feature/home/home_page.dart';
+import 'package:test_web/di/di.dart';
+import 'package:test_web/presentation/route/app_route.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  await initDI();
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final AppRouter _appRouter = di<AppRouter>();
+
+  MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Flutter Sidebar Menu',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      routerConfig: _appRouter.config(),
     );
   }
 }
