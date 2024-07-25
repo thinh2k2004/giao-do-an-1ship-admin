@@ -18,7 +18,7 @@ class _LoginPageState extends State<LoginPage> {
       body: Center(
         child: GestureDetector(
             onTap: () {
-              context.pushRoute(HomeRoute(pageType: PageType.shopOwnerInfo));
+              context.pushRoute(HomeRoute(pageType: PageType.dashboard));
             },
             child: Text('Login Page')),
       ),
